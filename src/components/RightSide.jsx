@@ -22,8 +22,6 @@ const RightSide = () => {
   };
   let startValue = 1;
   const [add, setAdd] = useState(startValue);
-  const [addNewPro, setAddNewPro] = useState(false);
-  const [closePro, setClosePro] = useState(true);
 
   return (
     <div className="h-[850px] rounded-2xl bg-[#1F1D2B]">
@@ -75,17 +73,13 @@ const RightSide = () => {
                 </div>
               </div>
               <div className="addTo flex h-[454px] flex-col gap-y-6 overflow-y-scroll">
-                {/* {data.map((item) => (
-                <div key={item.id}>hello</div>
-              ))} */}
-                {closePro && (
+                
                   <div>
                     <h1 className="text-center text-2xl font-medium text-white">
                       Your cart is empty
                     </h1>
                   </div>
-                )}
-                {addNewPro && (
+                {/* {addNewPro && (
                   <div>
                     <div className="mb-[10px] flex items-center gap-[61px]">
                       <div className="flex items-center gap-[5px]">
@@ -135,7 +129,7 @@ const RightSide = () => {
                       </button>
                     </div>
                   </div>
-                )}
+                )} */}
               </div>
               <div className="pt-5">
                 <div className="mb-4 flex justify-between">

@@ -158,13 +158,13 @@ const MiddleSide = ({ setType }) => {
                         $ {item.price}
                       </p>
                       <button
-                        className="text-sm font-normal leading-[140%] text-[#ABBBC2]"
-                        onClick={() => {
-                          localStorage.setItem(
-                            "addToCart",
-                            JSON.stringify(item),
-                          );
-                        }}
+                        className="text-sm font-normal outline-none border-none leading-[140%] text-[#ABBBC2]"
+                        // onClick={() => {
+                        //   localStorage.setItem(
+                        //     "addToCart",
+                        //     JSON.stringify(item),
+                        //   );
+                        // }}
                       >
                         {item.count} Bowls available
                       </button>
