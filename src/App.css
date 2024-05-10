@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  background: #252836;
+}
+
+/* #root {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+} */
+
+html {
+  scrollbar-width: thin;
+}
+
+.active {
+  box-shadow: 0px 8px 24px 0px rgba(234, 124, 105, 0.32)
+}
+
+.actives:hover {
+  box-shadow: 0px 8px 24px 0px rgba(234, 124, 105, 0.32)
+}
+
+ul {
+  cursor: pointer;
+}
+
+.indicator::after {
+  content: "";
+  position: absolute;
+  background-color: #EA7C69;
+  border-radius: 10px;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.indicator:hover::after {
+  width: 100%;
+}
+
+.activeIndicator::after {
+  content: "";
+  position: absolute;
+  background-color: #EA7C69;
+  border-radius: 10px;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+}
+
+.activeIndicator::after {
+  width: 100%;
+}
+
+.apiData {
+  scrollbar-width: none;
+}
+
+.addTo {
+  scrollbar-width: none;
+}
+
+.shadow-btn:hover {
+  box-shadow: 0px 8px 24px 0px rgba(234, 124, 105, 0.3);
+}
+
+.confirm {
+  box-shadow: 0px 8px 24px 0px rgba(234, 124, 105, 0.4)
+}
+
+.cancel:hover {
+  box-shadow: 0px 8px 24px 0px rgba(234, 124, 105, 0.4)
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 1px 10px 0px rgba(120, 128, 237, 0.32);
+}
