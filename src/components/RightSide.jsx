@@ -143,7 +143,7 @@ const RightSide = () => {
                     Sub total
                   </p>
                   <p className="font-medium leading-[140%] text-white">
-                    {`$${cartProducts.price++}`}
+{/*                     {`$${cartProducts.price++}`} */}
                   </p>
                 </div>
               </div>
